@@ -48,13 +48,16 @@ theme:
     code: Roboto Mono
 
 # --- Copyright and Social Links ---
-copyright: "Copyright &copy; 2025 Your Name" # IMPORTANT: Change this!
+copyright: "Copyright &copy; 2025 Your Marcos Keyser" # IMPORTANT: Change this!
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: "https://github.com/<your-github-username>" # IMPORTANT: Link to your profile
+      link: "https://github.com/markeyser" # IMPORTANT: Link to your profile
     - icon: fontawesome/brands/linkedin
-      link: "https://www.linkedin.com/in/<your-linkedin-id>/" # Optional but recommended
+      link: "https://www.linkedin.com/in/markeyser/" # Optional but recommended
+  analytics:
+    provider: google
+    property: "G-XJZL2DV1YH"
 
 extra_css:
   - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css
@@ -95,7 +98,10 @@ markdown_extensions:
 
 # --- Plugins ---
 plugins:
-  - search
+  - search:
+      lang:
+        - en
+      separator: '[\s\u200b\-]'
 
 # --- Navigation Structure ---
 nav:
