@@ -52,7 +52,12 @@ theme:
 copyright: "Copyright &copy; 2025 Marcos Keyser. All content is licensed under <a href='http://creativecommons.org/licenses/by/4.0/' target='_blank' rel='noopener'>CC BY 4.0</a> unless otherwise noted."
 
 extra:
-  comments: true  # <-- The comment switch
+  authors:
+    markeyser:
+      name: Marcos Keyser
+      description: Principal Applied Research Scientist
+      avatar: https://github.com/markeyser.png 
+  comments: true
   analytics:
     provider: google
     property: "G-XJZL2DV1YH"
