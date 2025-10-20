@@ -1,3 +1,5 @@
+# Lexical vs. Semantic Search
+
 ---
 tags:
   - lexicalSearch
@@ -8,9 +10,6 @@ tags:
   - vocabularyMismatch
   - biEncoderRetrieval
 ---
-
-
-# Lexical vs. Semantic Search
 
 In the last section, we identified the **Vocabulary Mismatch Problem** as the central obstacle in Information Retrieval. The reality that people use different words to describe the same idea is the primary reason why finding relevant documents is such a profound challenge. The history of IR can be understood as an evolution of two distinct philosophies for tackling this problem. The first is a mathematical and statistical approach focused on the words themselves, known as **lexical search**. The second is a conceptual and neurological approach focused on the underlying meaning, known as **semantic search**. This chapter will explore both.
 
