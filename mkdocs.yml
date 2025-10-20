@@ -49,17 +49,18 @@ theme:
     code: Roboto Mono
 
 # --- Copyright and Social Links ---
-copyright: "Copyright &copy; 2025 Your Marcos Keyser" # IMPORTANT: Change this!
+copyright: "Copyright &copy; 2025 Your Marcos Keyser" 
+
 extra:
-  comments: true
-  social:
-    - icon: fontawesome/brands/github
-      link: "https://github.com/markeyser" # IMPORTANT: Link to your profile
-    - icon: fontawesome/brands/linkedin
-      link: "https://www.linkedin.com/in/markeyser/" # Optional but recommended
+  comments: true  # <-- The comment switch
   analytics:
     provider: google
     property: "G-XJZL2DV1YH"
+  social:
+    - icon: fontawesome/brands/github
+      link: "https://github.com/markeyser"
+    - icon: fontawesome/brands/linkedin
+      link: "https://www.linkedin.com/in/markeyser/"
 
 extra_css:
   - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css
