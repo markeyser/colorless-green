@@ -107,11 +107,13 @@ plugins:
       separator: '[\s\u200b\-]'
   - social
   - tags
+  - blog 
 # --- Navigation Structure ---
 nav:
   - "The Reasoning Codex": index.md
-  - "Course 1: From Zero-Shot to Expert":
-    - "Course Overview": 01-retrieval-course/00-01-index.md
+  - "Blog": blog/index.md 
+  - "From Zero-Shot to Expert":
+    - "Overview": 01-retrieval-course/00-01-index.md
     - "Introduction": 01-retrieval-course/00-02-intro.md
     - "Part 1: Foundations of Relevance":
       - "1. Information Retrieval (IR) Fundamentals": 01-retrieval-course/01-01-ir-fundamentals.md
@@ -136,5 +138,5 @@ nav:
       - "17. The Art of Mimicry: The Mechanics of Knowledge Distillation": 01-retrieval-course/04-06-mechanics-of-knowledge-distillation.md
     - "Part 5: Annex":
       - "A. Beyond Retrieval—The Role of Context Refinement": 01-retrieval-course/05-01-annex-context-refinement.md
-  - "Course 2: Agentic Reasoning with RL (GRPO)":
+  - "Agentic Reasoning with RL (GRPO)":
     - "Coming Soon...": 02-agentic-reasoning-course/index.md
