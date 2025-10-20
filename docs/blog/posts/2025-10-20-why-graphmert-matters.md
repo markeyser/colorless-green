@@ -32,6 +32,8 @@ This is the lane where I operate: **designing and shipping domain-specific syste
 
 **GraphMERT** (*Belova et al., Princeton, Oct-2025*) proposes an **~80M encoder-only model** that **distills reliable knowledge graphs** (KGs) from vetted text + a small **seed ontology**. The encoder aligns **syntax** (text) and **semantics** (triples) via a **hierarchical graph-attention layer (H-GAT)** and a neat **“leafy chain graph”** encoding. On a diabetes corpus (~125M tokens) the KG it extracts beats a 32B LLM baseline on factuality (**FActScore 69.8% vs 40.2%**) and ontology validity (**68.8% vs 43.0%**). Link: <https://arxiv.org/abs/2510.09580>.
 
+<!-- more -->
+
 !!! info "Why I care"
 
     This is the exact kind of **compact, auditable backbone** I want under enterprise RAG: facts live in a graph (with citations), not only in weights; language models become the **surface layer**, not the database.

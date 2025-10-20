@@ -111,6 +111,8 @@ plugins:
   - tags
   - blog:
       authors_profiles: true
+      post_excerpt: required
+      post_excerpt_separator: <!-- more -->
   - git-revision-date-localized:
       enabled: true
       type: timeago
