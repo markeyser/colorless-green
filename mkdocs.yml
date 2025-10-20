@@ -108,6 +108,10 @@ plugins:
   - social
   - tags
   - blog 
+  - git-revision-date-localized:  # <-- ADD THIS BLOCK BACK
+      enabled: true
+      type: timeago
+
 # --- Navigation Structure ---
 nav:
   - "The Reasoning Codex": index.md
