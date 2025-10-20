@@ -114,8 +114,7 @@ plugins:
       separator: '[\s\u200b\-]'
   - social
   - tags
-  - blog:
-      authors_file: "{config}/extra/authors.yml"
+  - blog
   - git-revision-date-localized:
       enabled: true
       type: timeago
