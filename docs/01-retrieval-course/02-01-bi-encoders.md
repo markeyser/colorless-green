@@ -1,3 +1,13 @@
+---
+tags:
+  - biEncoder
+  - twoTowerArchitecture
+  - vectorIndexing
+  - approximateNearestNeighbor
+  - offlineIndexing
+  - candidateRetrieval
+  - highRecall
+---
 
 # Bi-Encoders: The Foundation of Scalable Semantic Search
 

@@ -1,3 +1,14 @@
+---
+tags:
+  - informationRetrieval
+  - retrievalAugmentedGeneration
+  - semanticSearch
+  - vocabularyMismatch
+  - relevanceGrading
+  - retrieverEvaluation
+  - corpusDesign
+---
+
 # Information Retrieval (IR) Fundamentals
 
 Welcome to the start of your capstone project. Before diving into the complex neural models and advanced tuning techniques that will define your work, it is essential to build a solid foundation. This chapter introduces the field of Information Retrieval (IR), the fundamental discipline that underpins not only your project but also a vast portion of modern artificial intelligence.

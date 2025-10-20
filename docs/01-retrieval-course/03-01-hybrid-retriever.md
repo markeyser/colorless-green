@@ -1,3 +1,13 @@
+---
+tags:
+  - hybridRetrieval
+  - modelEnsemble
+  - lexicalRetrieval
+  - learnedSparseRetrieval
+  - lateInteraction
+  - vocabularyMismatch
+  - retrievalRobustness
+---
 
 # The Hybrid Retriever: A Spectrum of Understanding
 

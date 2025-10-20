@@ -106,6 +106,7 @@ plugins:
         - en
       separator: '[\s\u200b\-]'
   - social
+  - tags
 # --- Navigation Structure ---
 nav:
   - "The Reasoning Codex": index.md

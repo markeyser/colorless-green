@@ -1,3 +1,14 @@
+---
+tags:
+  - reciprocalRankFusion
+  - rankFusion
+  - weightedFusion
+  - learningToRank
+  - queryAdaptiveFusion
+  - retrievalEnsemble
+  - consensusScoring
+---
+
 # Reciprocal Rank Fusion (RRF): The Democratic Ensemble
 
 In the last chapter, we assembled our expert team of "detectives"—BM25, SPLADE, and ColBERT. After investigating a query, each of these models returns with its own independent, ranked list of candidate documents. This presents us with a new and critical challenge: how do we synthesize these three separate lists into a single, definitive, and superior ranking?

@@ -1,3 +1,14 @@
+---
+tags:
+  - recallAtK
+  - nDCG
+  - MRR
+  - qrels
+  - rankingEvaluation
+  - evaluationProtocol
+  - retrievalMetrics
+---
+
 
 # Key IR Evaluation Metrics
 

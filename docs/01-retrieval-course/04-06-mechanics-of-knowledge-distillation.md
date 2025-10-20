@@ -1,3 +1,13 @@
+---
+tags:
+  - knowledgeDistillation
+  - teacherStudent
+  - softLabels
+  - pairwiseDistillation
+  - marginMSE
+  - sparsityRegularization
+  - selfDistillation
+---
 
 # The Art of Mimicry: The Mechanics of Knowledge Distillation for Retrieval
 

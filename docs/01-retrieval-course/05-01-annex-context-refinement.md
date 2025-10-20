@@ -1,3 +1,14 @@
+---
+tags:
+  - contextRefinement
+  - contextSelection
+  - contextCompression
+  - summarizationAbstraction
+  - passageScoring
+  - redundancyRemoval
+  - llmContextManagement
+---
+
 # Beyond Retrieval—The Role of Context Refinement
 
 Throughout this training, our focus has been on perfecting the core task of retrieval. You have learned how to build a sophisticated, multi-stage, domain-adapted pipeline to transform a user's query into a highly relevant, precision-ranked list of documents. Congratulations—your hybrid retrieval system has just produced a beautiful top-10 list of the most relevant insurance answers. But is the job done?

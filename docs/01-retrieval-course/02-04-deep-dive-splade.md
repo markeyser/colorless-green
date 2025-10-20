@@ -1,3 +1,14 @@
+---
+tags:
+  - learnedSparseRetrieval
+  - semanticExpansion
+  - contextualTermWeighting
+  - sparseDenseHybrid
+  - phraseProximityModeling
+  - lateInteraction
+  - oovHandling
+---
+
 # SPLADE: Teaching a Lexical Retriever to Think Semantically
 
 As we have explored the landscape of Information Retrieval, we have seen a clear division between two powerful but distinct paradigms. On one side, we have classical lexical models like BM25, which are fast, interpretable, and precise with keywords but are fundamentally "ignorant" of semantic meaning. On the other, we have dense models like ColBERT, which possess a deep semantic understanding but come with higher computational costs and can sometimes lose keyword precision.

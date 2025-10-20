@@ -1,3 +1,13 @@
+---
+tags:
+  - BM25
+  - inverseDocumentFrequency
+  - termFrequencySaturation
+  - documentLengthNormalization
+  - proximityScoring
+  - fieldedSearch
+  - contextualTermWeighting
+---
 
 # A Deep Dive into BM25: The Science of Statistical Relevance
 

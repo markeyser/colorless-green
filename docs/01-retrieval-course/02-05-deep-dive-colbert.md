@@ -1,3 +1,14 @@
+---
+tags:
+  - ColBERT
+  - lateInteraction
+  - tokenLevelEmbeddings
+  - MaxSim
+  - indexQuantization
+  - hybridFusion
+  - storageFootprint
+---
+
 # ColBERT: Fine-Grained Interaction for Semantic Precision
 
 In our exploration of dense retrieval, we have focused on the bi-encoder architecture, a powerful model that excels at capturing the holistic "gist" of a text. It does this by compressing the entire meaning of a query and a document into **single, fixed-length embedding vectors**. This approach is fast and scalable, but the very act of compression creates an inherent limitation: a potential loss of information.

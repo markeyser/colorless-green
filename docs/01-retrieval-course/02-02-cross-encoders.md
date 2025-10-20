@@ -1,3 +1,14 @@
+---
+tags:
+  - crossEncoder
+  - crossAttention
+  - reranking
+  - multiStageRetrieval
+  - knowledgeDistillation
+  - pairwiseScoring
+  - precisionSpeedTradeoff
+---
+
 
 # Cross-Encoders: The Gold Standard for Precision Reranking
 

@@ -1,3 +1,13 @@
+---
+tags:
+  - crossEncoder
+  - supervisedFineTuning
+  - hardNegativeMining
+  - pointwiseClassification
+  - binaryCrossEntropy
+  - listwiseReranking
+  - efficientReranking
+---
 
 # Training the 'Teacher': Supervised Fine-Tuning for the Cross-Encoder
 

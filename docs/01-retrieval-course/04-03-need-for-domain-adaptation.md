@@ -1,3 +1,14 @@
+---
+tags:
+  - domainAdaptivePretraining
+  - maskedLanguageModeling
+  - continuedPretraining
+  - domainCorpusCuration
+  - vocabularyAlignment
+  - semanticAlignment
+  - supervisedFineTuning
+---
+
 # The Need for Domain Adaptation
 
 We have established the critical need to transform our "expert generalist" model into a "seasoned specialist" capable of navigating the complex world of insurance. This transformation does not happen in a single step. We must follow a methodical, two-phase process that mirrors how a human expert develops.

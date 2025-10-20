@@ -1,3 +1,14 @@
+---
+tags:
+  - embeddings
+  - distributionalHypothesis
+  - contextualEmbeddings
+  - transformerModels
+  - cosineSimilarity
+  - denseVectorRepresentation
+  - polysemyDisambiguation
+---
+
 # Embeddings: The Language of Meaning
 
 In the previous chapter, we introduced the concept of a "galaxy of meaning," where semantic search works by finding the documents closest to a query. This abstraction is powerful, but as researchers and engineers, we must go deeper. This chapter demystifies that "magic." We will explore what an **`embedding`** is, the linguistic theory that gives it power, how the technology has evolved, and how we can manipulate meaning as if it were a mathematical object.
