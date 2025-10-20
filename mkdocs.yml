@@ -114,8 +114,9 @@ plugins:
       separator: '[\s\u200b\-]'
   - social
   - tags
-  - blog
-  - git-revision-date-localized:  # <-- ADD THIS BLOCK BACK
+  - blog:
+      authors_file: "{config}/extra/authors.yml"
+  - git-revision-date-localized:
       enabled: true
       type: timeago
 
