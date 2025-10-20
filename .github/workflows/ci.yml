@@ -1,56 +1,60 @@
 # .github/workflows/ci.yml
 name: Build and Deploy MkDocs Site
 
-# Trigger the workflow on pushes to the 'main' branch
 on:
   push:
     branches:
       - main
 
-# Allow this job to create a GitHub Pages deployment
 permissions:
   contents: read
   pages: write
   id-token: write
 
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
 jobs:
   deploy:
-    # --- ADD THIS BLOCK ---
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    # --------------------
     runs-on: ubuntu-latest
     steps:
-      # 1. Check out the repository's code
+      # 1) Full history so git-revision-date-localized works correctly
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      # 2. Set up Python environment
+      # 2) Configure Pages (recommended by GitHub for custom workflows)
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      # 3) Python + Poetry
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: 3.11 # Or your preferred Python version
+          python-version: '3.11'
 
-      # 3. Install Poetry
       - name: Install Poetry
         uses: snok/install-poetry@v1
 
-      # 4. Install project dependencies using Poetry
       - name: Install dependencies
         run: poetry install --no-root
 
-      # 5. Build the MkDocs site
+      # 4) Build the site
       - name: Build site
         run: poetry run mkdocs build
 
-      # 6. Upload the built site as an artifact
+      # 5) Upload artifact for Pages
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./site
 
-      # 7. Deploy the artifact to GitHub Pages
+      # 6) Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

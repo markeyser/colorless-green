@@ -2,8 +2,6 @@
 title: "Beyond Bigger LLMs — Why GraphMERT Matters (and why I care)"
 subtitle: "A Glimpse into the Future of Enterprise RAG"
 date: 2025-10-20
-authors:
-  - markeyser 
 tags:
   - neurosymbolicStack
   - structuredMemory
