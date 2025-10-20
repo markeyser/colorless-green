@@ -1,0 +1,24 @@
+[project]
+name = "the-reasoning-codex"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "markeyser",email = "marcosak@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mkdocs-git-revision-date-localized-plugin (>=1.4.7,<2.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "the_reasoning_codex", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "mkdocs-material (>=9.6.22,<10.0.0)"
+]
