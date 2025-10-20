@@ -10,8 +10,6 @@ This repository contains the source for the published content. The code for the 
 
 ## **[➡️ Visit the Live Site: The Reasoning Codex](https://markeyser.github.io/the-reasoning-codex/)**
 
----
-
 ## 🏛️ Core Philosophy
 
 This portfolio explores a central thesis: that the path to robust, high-performance AI lies not in the brute force of massive, generalist models, but in the precision and efficiency of smaller, open-source models that are expertly fine-tuned to the data and the task at hand.
@@ -22,8 +20,6 @@ The playbooks focus on a rigorous, three-phase methodology for model specializat
 2. **Task Specialization** (e.g., SFT)
 3. **Behavioral Alignment** (e.g., RLFT)
 
----
-
 ## 📚 Published Playbooks
 
 - **[From Zero-Shot to Expert: A Deep Dive into Retrieval Domain Adaptation](https://markeyser.github.io/the-reasoning-codex/01-retrieval-course/00-01-index.md)**
@@ -33,8 +29,6 @@ The playbooks focus on a rigorous, three-phase methodology for model specializat
 - **[Training the Agent: A Deep Dive into Policy Optimization with RLFT](https://markeyser.github.io/the-reasoning-codex/02-agentic-reasoning-course/index.md)** - *Coming Soon*
 
   *An advanced playbook on moving beyond prompt engineering to train autonomous AI agents using the CPT → SFT → RLFT stack and methods like GRPO.*
-
----
 
 ## 🚀 Local Development
 
@@ -47,8 +41,6 @@ This site is built with Python, [Poetry](https://python-poetry.org/), and [MkDoc
 5. `mkdocs serve`
 
 The site will be available at `http://127.0.0.1:8000` with live reloading.
-
----
 
 ## ⚖️ Licensing
 
