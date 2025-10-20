@@ -110,7 +110,7 @@ plugins:
   - social
   - tags
   - blog:
-      authors_file: "authors.yml"
+      authors_profiles: true
   - git-revision-date-localized:
       enabled: true
       type: timeago
