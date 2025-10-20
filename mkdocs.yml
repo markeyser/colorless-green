@@ -61,6 +61,8 @@ extra:
       link: "https://github.com/markeyser"
     - icon: fontawesome/brands/linkedin
       link: "https://www.linkedin.com/in/markeyser/"
+    - icon: fontawesome/brands/x-twitter
+      link: "https://x.com/makeyser"
 
 extra_css:
   - https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css
