@@ -1,13 +1,13 @@
 # --- Project Information ---
 site_name: "The Reasoning Codex"
-site_url: "https://markeyser.github.io/the-reasoning-codex/" # IMPORTANT: Change this!
-site_author: "Marcos Keyser" # IMPORTANT: Change this!
+site_url: "https://markeyser.github.io/the-reasoning-codex/"
+site_author: "Marcos Keyser"
 site_description: "A collection of playbooks on building reliable, specialized AI systems."
 
 # --- Repository Integration ---
-repo_url: "https://github.com/markeyser/the-reasoning-codex" # IMPORTANT: Change this!
+repo_url: "https://github.com/markeyser/the-reasoning-codex"
 repo_name: "the-reasoning-codex"
-edit_uri: "edit/main/docs/" # Allows for "Edit this page" links
+edit_uri: "edit/main/docs/"
 
 # --- Theme Configuration ---
 theme:
@@ -52,11 +52,7 @@ theme:
 copyright: "Copyright &copy; 2025 Marcos Keyser. All content is licensed under <a href='http://creativecommons.org/licenses/by/4.0/' target='_blank' rel='noopener'>CC BY 4.0</a> unless otherwise noted."
 
 extra:
-  authors:
-    markeyser:
-      name: Marcos Keyser
-      description: Principal Applied Research Scientist
-      avatar: https://github.com/markeyser.png 
+  # The 'authors' block has been MOVED to authors.yml
   comments: true
   analytics:
     provider: google
@@ -78,7 +74,6 @@ extra_javascript:
   - javascripts/katex.js
 
 # --- Markdown Extensions ---
-# This is a cleaned-up and optimized list of extensions
 markdown_extensions:
   - admonition
   - pymdownx.details
@@ -114,7 +109,8 @@ plugins:
       separator: '[\s\u200b\-]'
   - social
   - tags
-  - blog
+  - blog:
+      authors_file: "authors.yml"
   - git-revision-date-localized:
       enabled: true
       type: timeago
@@ -131,22 +127,22 @@ nav:
       - "2. Lexical vs. Semantic Search": 01-retrieval-course/01-02-lexical-vs-semantic-search.md
       - "3. Embeddings: The Language of Meaning": 01-retrieval-course/01-03-embeddings-language-of-meaning.md
     - "Part 2: The Architectural Spectrum":
-      - "4. Bi-Encoders: The Foundation of Scalable Semantic Search": 01-retrieval-course/02-01-bi-encoders.md
-      - "5. Cross-Encoders: The Gold Standard for Precision Reranking": 01-retrieval-course/02-02-cross-encoders.md
+      - "4. Bi-Encoders": 01-retrieval-course/02-01-bi-encoders.md
+      - "5. Cross-Encoders": 01-retrieval-course/02-02-cross-encoders.md
       - "6. A Deep Dive into BM25": 01-retrieval-course/02-03-deep-dive-bm25.md
-      - "7. SPLADE: Teaching a Lexical Retriever to Think Semantically": 01-retrieval-course/02-04-deep-dive-splade.md
-      - "8. ColBERT: Fine-Grained Interaction for Semantic Precision": 01-retrieval-course/02-05-deep-dive-colbert.md
+      - "7. SPLADE": 01-retrieval-course/02-04-deep-dive-splade.md
+      - "8. ColBERT": 01-retrieval-course/02-05-deep-dive-colbert.md
     - "Part 3: Assembling the Pipeline":
-      - "9. The Hybrid Retriever: A Spectrum of Understanding": 01-retrieval-course/03-01-hybrid-retriever.md
-      - "10. Reciprocal Rank Fusion (RRF): The Democratic Ensemble": 01-retrieval-course/03-02-reciprocal-rank-fusion.md
+      - "9. The Hybrid Retriever": 01-retrieval-course/03-01-hybrid-retriever.md
+      - "10. Reciprocal Rank Fusion (RRF)": 01-retrieval-course/03-02-reciprocal-rank-fusion.md
       - "11. The Modern Retriever: A Visual Guide": 01-retrieval-course/03-03-visual-guide-architectures.md
     - "Part 4: The Science of Training":
       - "12. Key IR Evaluation Metrics": 01-retrieval-course/04-01-key-ir-evaluation-metrics.md
-      - "13. The BEIR Framework for Reproducible Research": 01-retrieval-course/04-02-the-beir-framework-for-reproducible-research.md
+      - "13. The BEIR Framework": 01-retrieval-course/04-02-the-beir-framework-for-reproducible-research.md
       - "14. The Need for Domain Adaptation": 01-retrieval-course/04-03-need-for-domain-adaptation.md
-      - "15. The Engine of DAPT: A Deep Dive into Masked Language Modeling": 01-retrieval-course/04-04-engine-of-dapt-mlm.md
-      - "16. Training the 'Teacher': Supervised Fine-Tuning for the Cross-Encoder": 01-retrieval-course/04-05-training-the-teacher-cross-encoder.md
-      - "17. The Art of Mimicry: The Mechanics of Knowledge Distillation": 01-retrieval-course/04-06-mechanics-of-knowledge-distillation.md
+      - "15. The Engine of DAPT (MLM)": 01-retrieval-course/04-04-engine-of-dapt-mlm.md
+      - "16. Training the 'Teacher'": 01-retrieval-course/04-05-training-the-teacher-cross-encoder.md
+      - "17. The Art of Mimicry (Distillation)": 01-retrieval-course/04-06-mechanics-of-knowledge-distillation.md
     - "Part 5: Annex":
       - "A. Beyond Retrieval—The Role of Context Refinement": 01-retrieval-course/05-01-annex-context-refinement.md
   - "Agentic Reasoning with RL (GRPO)":
