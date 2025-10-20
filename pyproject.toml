@@ -20,5 +20,5 @@ build-backend = "poetry.core.masonry.api"
 
 [dependency-groups]
 dev = [
-    "mkdocs-material[imaging] (>=9.6.22,<10.0.0)"
+    "mkdocs-material[imaging,text] (>=9.6.22,<10.0.0)"
 ]
