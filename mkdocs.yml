@@ -1,11 +1,11 @@
 # --- Project Information ---
 site_name: "The Reasoning Codex"
-site_url: "https://<your-github-username>.github.io/the-reasoning-codex/" # IMPORTANT: Change this!
+site_url: "https://markeyser.github.io/the-reasoning-codex/" # IMPORTANT: Change this!
 site_author: "Your Name" # IMPORTANT: Change this!
 site_description: "A collection of playbooks on building reliable, specialized AI systems."
 
 # --- Repository Integration ---
-repo_url: "https://github.com/<your-github-username>/the-reasoning-codex" # IMPORTANT: Change this!
+repo_url: "https://github.com/markeyser/the-reasoning-codex" # IMPORTANT: Change this!
 repo_name: "the-reasoning-codex"
 edit_uri: "edit/main/docs/" # Allows for "Edit this page" links
 
