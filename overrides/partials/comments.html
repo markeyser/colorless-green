@@ -1,46 +1,44 @@
-{% if page.meta.comments %}
-  <h2 id="__comments">{{ lang.t("meta.comments") }}</h2>
-  
-  <!-- Giscus comment system -->
-  <script src="https://giscus.app/client.js"
-          data-repo="markeyser/the-reasoning-codex"
-          data-repo-id="R_kgDOQFemIw"
-          data-category="Page Comments"
-          data-category-id="DIC_kwDOQFemI84Cw2Wt"
-          data-mapping="pathname"
-          data-strict="0"
-          data-reactions-enabled="1"
-          data-emit-metadata="0"
-          data-input-position="bottom"
-          data-theme="preferred_color_scheme"
-          data-lang="en"
-          crossorigin="anonymous"
-          async>
-  </script>
+<h2 id="__comments">Comments</h2>
 
-  <!-- Synchronize Giscus theme with palette -->
-  <script>
-    var giscus = document.querySelector("script[src*=giscus]")
+<!-- Giscus comment system -->
+<script src="https://giscus.app/client.js"
+        data-repo="markeyser/the-reasoning-codex"
+        data-repo-id="R_kgDOQFemIw"
+        data-category="Page Comments"
+        data-category-id="DIC_kwDOQFemI84Cw2Wt"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
 
-    /* Set theme on initial load */
+<!-- Synchronize Giscus theme with palette -->
+<script>
+  var giscus = document.querySelector("script[src*=giscus]")
+
+  /* Set theme on initial load */
+  var palette = __md_get("__palette")
+  if (palette && typeof palette.color === "object") {
+    var theme = palette.color.scheme === "slate" ? "transparent_dark" : "light"
+    giscus.setAttribute("data-theme", theme) 
+  }
+
+  /* Update theme when palette is changed */
+  var observer = new MutationObserver(function() {
     var palette = __md_get("__palette")
     if (palette && typeof palette.color === "object") {
       var theme = palette.color.scheme === "slate" ? "transparent_dark" : "light"
       giscus.setAttribute("data-theme", theme) 
     }
-
-    /* Update theme when palette is changed */
-    var observer = new MutationObserver(function() {
-      var palette = __md_get("__palette")
-      if (palette && typeof palette.color === "object") {
-        var theme = palette.color.scheme === "slate" ? "transparent_dark" : "light"
-        giscus.setAttribute("data-theme", theme) 
-      }
-    })
-    
-    observer.observe(document.body, {
-      attributes: true,
-      attributeFilter: ["data-md-color-scheme"]
-    })
-  </script>
-{% endif %}
+  })
+  
+  observer.observe(document.body, {
+    attributes: true,
+    attributeFilter: ["data-md-color-scheme"]
+  })
+</script>
