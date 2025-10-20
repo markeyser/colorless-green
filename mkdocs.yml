@@ -107,7 +107,7 @@ plugins:
       separator: '[\s\u200b\-]'
   - social
   - tags
-  - blog 
+  - blog
   - git-revision-date-localized:  # <-- ADD THIS BLOCK BACK
       enabled: true
       type: timeago
