@@ -22,6 +22,17 @@
   "markdownlint.config": {
     "extends": ".markdownlint.yaml"
   },
+  // Teach the YAML language server about MkDocs custom Python tags.
+  "yaml.customTags": [
+    "tag:yaml.org,2002:python/name:pymdownx.superfences.fence_code_format",
+    "tag:yaml.org,2002:python/name:material.extensions.emoji.twemoji",
+    "tag:yaml.org,2002:python/name:material.extensions.emoji.to_svg"
+  ],
+  // Allow domain-specific vocabulary so cspell stops flagging it.
+  "cSpell.words": [
+    "pymdownx",
+    "twemoji"
+  ],
   // --- Python-specific settings (for the virtual environment) ---
   // Helps VS Code find your Poetry virtual environment.
   "python.defaultInterpreterPath": ".venv/bin/python"
