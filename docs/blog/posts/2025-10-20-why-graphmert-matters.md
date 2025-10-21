@@ -45,9 +45,10 @@ This post is my analysis of the paper. I'll break down its core ideas, offer a s
 
 <!-- more -->
 
-!!! abstract "arXiv.org <img src='https://static.arxiv.org/static/browse/0.3.4/images/arxiv-logo-o-300.png' alt='arXiv Logo' align='right' width='48' style='border-radius: 4px;'>"
+!!! arxiv "arXiv.org"
 
     [**GraphMERT: Efficient and Scalable Distillation of Reliable Knowledg...**](https://arxiv.org/abs/2510.09580)
+
 
     Researchers have pursued neurosymbolic artificial intelligence (AI) applications for nearly three decades because symbolic components provide abstraction while neural components provide generalization. Thus, a marriage of the two components can lead to rapid advancements in AI. Yet, the field has not realized this promise since most neurosymboli...
 

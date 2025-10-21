@@ -1,0 +1,26 @@
+/* docs/stylesheets/extra.css */
+
+/* Define a new 'arxiv' admonition type */
+:root {
+    --md-admonition-icon--arxiv: url('https://info.arxiv.org/brand/images/brand-logo-primary.svg');
+}
+
+.md-typeset .admonition.arxiv,
+.md-typeset details.arxiv {
+    border-color: #2a6479;
+    /* A color that matches the arXiv theme */
+}
+
+.md-typeset .arxiv>.md-admonition-title,
+.md-typeset .arxiv>summary {
+    background-color: rgba(42, 100, 121, 0.1);
+    /* A light shade of the border color */
+    border-color: #2a6479;
+}
+
+.md-typeset .arxiv>.md-admonition-title::before,
+.md-typeset .arxiv>summary::before {
+    background-color: #2a6479;
+    -webkit-mask-image: var(--md-admonition-icon--arxiv);
+    mask-image: var(--md-admonition-icon--arxiv);
+}
