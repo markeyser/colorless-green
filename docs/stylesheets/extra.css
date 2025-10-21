@@ -8,25 +8,17 @@
 .md-typeset .admonition.arxiv,
 .md-typeset details.arxiv {
     border-color: #2a6479;
-    /* A color that matches the arXiv theme */
 }
 
 .md-typeset .arxiv>.md-admonition-title,
 .md-typeset .arxiv>summary {
     background-color: rgba(42, 100, 121, 0.1);
-    border-color: #2a6479;
 }
 
-/* --- THIS IS THE CORRECTED PART --- */
-.md-typeset .arxiv>.md-admonition-title::before,
+/* --- THIS IS THE FINAL, CORRECTED PART --- */
+.md-typeset .admonition.arxiv>.md-admonition-title::before,
 .md-typeset .arxiv>summary::before {
-    background-image: var(--md-admonition-icon--arxiv);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    /* or 'cover' */
-    -webkit-mask-image: none;
-    /* Turn off the default mask */
-    mask-image: none;
-    /* Turn off the default mask */
+    background: var(--md-admonition-icon--arxiv) no-repeat center/contain !important;
+    -webkit-mask: none !important;
+    mask: none !important;
 }
