@@ -23,7 +23,7 @@ The playbooks focus on a rigorous, three-phase methodology for model specializat
 ## 📚 Published Playbooks
 
 - **[From Zero-Shot to Expert: A Deep Dive into Retrieval Domain Adaptation](https://markeyser.github.io/the-reasoning-codex/01-retrieval-course/00-01-index.md)**
-  
+
   *A graduate-level playbook on building and fine-tuning state-of-the-art retrieval systems, covering modern architectures (BM25, SPLADE, ColBERT) and the advanced DAPT → SFT workflow.*
 
 - **[Training the Agent: A Deep Dive into Policy Optimization with RLFT](https://markeyser.github.io/the-reasoning-codex/02-agentic-reasoning-course/index.md)** - *Coming Soon*

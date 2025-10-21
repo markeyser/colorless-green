@@ -2,13 +2,15 @@
 
 ---
 tags:
-  - lexicalSearch
-  - BM25
-  - semanticSearch
-  - denseEmbeddings
-  - transformerModels
-  - vocabularyMismatch
-  - biEncoderRetrieval
+
+- lexicalSearch
+- BM25
+- semanticSearch
+- denseEmbeddings
+- transformerModels
+- vocabularyMismatch
+- biEncoderRetrieval
+
 ---
 
 In the last section, we identified the **Vocabulary Mismatch Problem** as the central obstacle in Information Retrieval. The reality that people use different words to describe the same idea is the primary reason why finding relevant documents is such a profound challenge. The history of IR can be understood as an evolution of two distinct philosophies for tackling this problem. The first is a mathematical and statistical approach focused on the words themselves, known as **lexical search**. The second is a conceptual and neurological approach focused on the underlying meaning, known as **semantic search**. This chapter will explore both.
@@ -36,8 +38,8 @@ The pinnacle of this approach is an algorithm called **Okapi BM25**. Think of **
 
 Lexical search is a powerful tool, but it has a distinct and important set of limitations.
 
-* **Strengths:** It is extremely fast and computationally efficient. Its results are highly **interpretable**—you can look at the TF-IDF scores and know precisely why a document was ranked highly. It excels when a user's query contains unique keywords, such as product names ("Titan V2"), acronyms ("SFT"), or specific legal terms, as it will match those terms exactly.
-* **Weaknesses:** Its defining weakness is its **complete inability to solve the vocabulary mismatch problem.** It has no concept of synonyms ("car" and "auto" are as different to BM25 as "car" and "banana"), it cannot understand paraphrasing, and it is blind to conceptual relationships. If the exact keywords from the query are not present in a document, that document is invisible to the system, no matter how relevant it might be.
+- **Strengths:** It is extremely fast and computationally efficient. Its results are highly **interpretable**—you can look at the TF-IDF scores and know precisely why a document was ranked highly. It excels when a user's query contains unique keywords, such as product names ("Titan V2"), acronyms ("SFT"), or specific legal terms, as it will match those terms exactly.
+- **Weaknesses:** Its defining weakness is its **complete inability to solve the vocabulary mismatch problem.** It has no concept of synonyms ("car" and "auto" are as different to BM25 as "car" and "banana"), it cannot understand paraphrasing, and it is blind to conceptual relationships. If the exact keywords from the query are not present in a document, that document is invisible to the system, no matter how relevant it might be.
 
 ## **3. Semantic Search: The Art of Understanding Meaning**
 
@@ -59,8 +61,8 @@ The search process is then beautifully simple. When a user submits a query, the 
 
 Semantic search is a paradigm shift, but it is not a silver bullet.
 
-* **Strengths:** Its defining strength is its ability to gracefully handle the vocabulary mismatch problem. It naturally understands synonyms, paraphrasing, and thematic context. This makes it incredibly robust and flexible, capable of grasping a user's true *intent*.
-* **Weaknesses:** It is more computationally expensive than lexical search, though modern indexing libraries have made it highly scalable. Its results are often a "black box," making them less interpretable. And importantly, it can sometimes smooth over important nuances. By focusing on the general meaning, it can occasionally miss a document that is relevant because of a single, highly specific keyword that **`BM25`** would have caught instantly.
+- **Strengths:** Its defining strength is its ability to gracefully handle the vocabulary mismatch problem. It naturally understands synonyms, paraphrasing, and thematic context. This makes it incredibly robust and flexible, capable of grasping a user's true *intent*.
+- **Weaknesses:** It is more computationally expensive than lexical search, though modern indexing libraries have made it highly scalable. Its results are often a "black box," making them less interpretable. And importantly, it can sometimes smooth over important nuances. By focusing on the general meaning, it can occasionally miss a document that is relevant because of a single, highly specific keyword that **`BM25`** would have caught instantly.
 
 ## **4. Summary: A Head-to-Head Comparison**
 

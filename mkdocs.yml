@@ -12,7 +12,7 @@ edit_uri: "edit/main/docs/"
 # --- Theme Configuration ---
 theme:
   name: material
-  custom_dir: overrides 
+  custom_dir: overrides
   logo: assets/logo.svg
   icon:
     repo: fontawesome/brands/github
@@ -120,32 +120,32 @@ plugins:
 # --- Navigation Structure ---
 nav:
   - "The Reasoning Codex": index.md
-  - "Blog": blog/index.md 
+  - "Blog": blog/index.md
   - "From Zero-Shot to Expert":
-    - "Overview": 01-retrieval-course/00-01-index.md
-    - "Introduction": 01-retrieval-course/00-02-intro.md
-    - "Part 1: Foundations of Relevance":
-      - "1. Information Retrieval (IR) Fundamentals": 01-retrieval-course/01-01-ir-fundamentals.md
-      - "2. Lexical vs. Semantic Search": 01-retrieval-course/01-02-lexical-vs-semantic-search.md
-      - "3. Embeddings: The Language of Meaning": 01-retrieval-course/01-03-embeddings-language-of-meaning.md
-    - "Part 2: The Architectural Spectrum":
-      - "4. Bi-Encoders": 01-retrieval-course/02-01-bi-encoders.md
-      - "5. Cross-Encoders": 01-retrieval-course/02-02-cross-encoders.md
-      - "6. A Deep Dive into BM25": 01-retrieval-course/02-03-deep-dive-bm25.md
-      - "7. SPLADE": 01-retrieval-course/02-04-deep-dive-splade.md
-      - "8. ColBERT": 01-retrieval-course/02-05-deep-dive-colbert.md
-    - "Part 3: Assembling the Pipeline":
-      - "9. The Hybrid Retriever": 01-retrieval-course/03-01-hybrid-retriever.md
-      - "10. Reciprocal Rank Fusion (RRF)": 01-retrieval-course/03-02-reciprocal-rank-fusion.md
-      - "11. The Modern Retriever: A Visual Guide": 01-retrieval-course/03-03-visual-guide-architectures.md
-    - "Part 4: The Science of Training":
-      - "12. Key IR Evaluation Metrics": 01-retrieval-course/04-01-key-ir-evaluation-metrics.md
-      - "13. The BEIR Framework": 01-retrieval-course/04-02-the-beir-framework-for-reproducible-research.md
-      - "14. The Need for Domain Adaptation": 01-retrieval-course/04-03-need-for-domain-adaptation.md
-      - "15. The Engine of DAPT (MLM)": 01-retrieval-course/04-04-engine-of-dapt-mlm.md
-      - "16. Training the 'Teacher'": 01-retrieval-course/04-05-training-the-teacher-cross-encoder.md
-      - "17. The Art of Mimicry (Distillation)": 01-retrieval-course/04-06-mechanics-of-knowledge-distillation.md
-    - "Part 5: Annex":
-      - "A. Beyond Retrieval—The Role of Context Refinement": 01-retrieval-course/05-01-annex-context-refinement.md
+      - "Overview": 01-retrieval-course/00-01-index.md
+      - "Introduction": 01-retrieval-course/00-02-intro.md
+      - "Part 1: Foundations of Relevance":
+          - "1. Information Retrieval (IR) Fundamentals": 01-retrieval-course/01-01-ir-fundamentals.md
+          - "2. Lexical vs. Semantic Search": 01-retrieval-course/01-02-lexical-vs-semantic-search.md
+          - "3. Embeddings: The Language of Meaning": 01-retrieval-course/01-03-embeddings-language-of-meaning.md
+      - "Part 2: The Architectural Spectrum":
+          - "4. Bi-Encoders": 01-retrieval-course/02-01-bi-encoders.md
+          - "5. Cross-Encoders": 01-retrieval-course/02-02-cross-encoders.md
+          - "6. A Deep Dive into BM25": 01-retrieval-course/02-03-deep-dive-bm25.md
+          - "7. SPLADE": 01-retrieval-course/02-04-deep-dive-splade.md
+          - "8. ColBERT": 01-retrieval-course/02-05-deep-dive-colbert.md
+      - "Part 3: Assembling the Pipeline":
+          - "9. The Hybrid Retriever": 01-retrieval-course/03-01-hybrid-retriever.md
+          - "10. Reciprocal Rank Fusion (RRF)": 01-retrieval-course/03-02-reciprocal-rank-fusion.md
+          - "11. The Modern Retriever: A Visual Guide": 01-retrieval-course/03-03-visual-guide-architectures.md
+      - "Part 4: The Science of Training":
+          - "12. Key IR Evaluation Metrics": 01-retrieval-course/04-01-key-ir-evaluation-metrics.md
+          - "13. The BEIR Framework": 01-retrieval-course/04-02-the-beir-framework-for-reproducible-research.md
+          - "14. The Need for Domain Adaptation": 01-retrieval-course/04-03-need-for-domain-adaptation.md
+          - "15. The Engine of DAPT (MLM)": 01-retrieval-course/04-04-engine-of-dapt-mlm.md
+          - "16. Training the 'Teacher'": 01-retrieval-course/04-05-training-the-teacher-cross-encoder.md
+          - "17. The Art of Mimicry (Distillation)": 01-retrieval-course/04-06-mechanics-of-knowledge-distillation.md
+      - "Part 5: Annex":
+          - "A. Beyond Retrieval—The Role of Context Refinement": 01-retrieval-course/05-01-annex-context-refinement.md
   - "Agentic Reasoning with RL (GRPO)":
-    - "Coming Soon...": 02-agentic-reasoning-course/index.md
+      - "Coming Soon...": 02-agentic-reasoning-course/index.md

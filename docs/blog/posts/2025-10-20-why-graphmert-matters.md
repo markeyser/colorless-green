@@ -94,7 +94,7 @@ This is the lane where I operate: **designing and shipping domain-specific syste
 
 ### 4.6 Use it
 
-- Swap vector-RAG for **GraphRAG** (or graph-aware retriever).  
+- Swap vector-RAG for **GraphRAG** (or graph-aware retriever).
 - Evaluate with **FActScore (context-only)** + **ValidityScore**, plus your **task metrics** (Exact Match, nDCG, human red-team).
 
 ## Where GraphMERT sits in the 2025 stack

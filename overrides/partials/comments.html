@@ -25,7 +25,7 @@
   var palette = __md_get("__palette")
   if (palette && typeof palette.color === "object") {
     var theme = palette.color.scheme === "slate" ? "transparent_dark" : "light"
-    giscus.setAttribute("data-theme", theme) 
+    giscus.setAttribute("data-theme", theme)
   }
 
   /* Update theme when palette is changed */
@@ -33,10 +33,10 @@
     var palette = __md_get("__palette")
     if (palette && typeof palette.color === "object") {
       var theme = palette.color.scheme === "slate" ? "transparent_dark" : "light"
-      giscus.setAttribute("data-theme", theme) 
+      giscus.setAttribute("data-theme", theme)
     }
   })
-  
+
   observer.observe(document.body, {
     attributes: true,
     attributeFilter: ["data-md-color-scheme"]
