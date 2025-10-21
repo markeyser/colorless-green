@@ -84,8 +84,8 @@ The distillation process for your project showcases the elegant flexibility of m
 
 * Both the ColBERT and SPLADE students learn from the exact same expert Teacher, ensuring a consistent transfer of knowledge.
 * However, the specific training mechanics are expertly tailored to the unique strengths and constraints of their respective architectures:
-    * **ColBERT** uses a **pairwise, margin-focused loss** to hone its fine-grained ranking ability.
-    * **SPLADE** uses a **direct regression loss combined with a sparsity penalty** to learn to be both accurate and efficient.
+  * **ColBERT** uses a **pairwise, margin-focused loss** to hone its fine-grained ranking ability.
+  * **SPLADE** uses a **direct regression loss combined with a sparsity penalty** to learn to be both accurate and efficient.
 
 This demonstrates how the core principles of Knowledge Distillation can be adapted in sophisticated ways to create a diverse team of highly specialized, state-of-the-art retrieval models.
 

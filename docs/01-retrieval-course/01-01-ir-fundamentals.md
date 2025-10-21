@@ -26,13 +26,13 @@ The term "unstructured" is critical here. This is what distinguishes IR from a s
 Every IR system, from a simple keyword search to the sophisticated pipeline you will build, is composed of the same fundamental building blocks. Understanding these terms in the context of your project is the first step toward mastering the material.
 
 * **Corpus:** This is the entire universe of information your system has access to. It is the digital library—the haystack—through which the system must search.
-    * **In Your Project:** Your **`Corpus`** is the `corpus.jsonl` file, which contains all 24,977 unique, deduplicated answers from the Life & Casualty insurance dataset. This is your project's single source of truth.
+  * **In Your Project:** Your **`Corpus`** is the `corpus.jsonl` file, which contains all 24,977 unique, deduplicated answers from the Life & Casualty insurance dataset. This is your project's single source of truth.
 
 * **Document:** This refers to a single, atomic unit of information within the **`Corpus`**. A document could be a web page, a paragraph, a sentence, or, in your case, an answer.
-    * **In Your Project:** A **`Document`** is a single entry in your `corpus.jsonl` file. Your project adopts an "answers-as-documents" methodology, meaning each unique answer is treated as a standalone document to be retrieved.
+  * **In Your Project:** A **`Document`** is a single entry in your `corpus.jsonl` file. Your project adopts an "answers-as-documents" methodology, meaning each unique answer is treated as a standalone document to be retrieved.
 
 * **Query:** This is the user's expression of their information need, which is submitted to the system. It can range from a single word to a full, natural language question.
-    * **In Your Project:** A **`Query`** corresponds to a line in your queries_*.dedup.tsv files. These are the carefully selected questions you will use to evaluate your system's performance.
+  * **In Your Project:** A **`Query`** corresponds to a line in your queries_*.dedup.tsv files. These are the carefully selected questions you will use to evaluate your system's performance.
 
 ## **3. The Heart of the Matter: The Concept of Relevance**
 

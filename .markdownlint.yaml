@@ -1,0 +1,18 @@
+# .markdownlint.yaml
+# Single source of truth for all Markdown linting rules.
+
+# Default rules are all enabled
+default: true
+
+# MD013 - Line length: Disabled.
+MD013: false
+
+# MD025 - Multiple top-level headings: Allowed, useful for blog index.
+MD025: false
+
+# MD033 - Inline HTML: Allowed, necessary for the CC license link in the footer.
+MD033: false
+
+# MD041 - First line in file should be a top-level heading: Disabled.
+# This is CRITICAL to allow YAML front matter.
+MD041: false

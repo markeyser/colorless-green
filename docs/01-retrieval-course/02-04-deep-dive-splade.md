@@ -144,9 +144,9 @@ Here is a breakdown of the key reasons why BM25 remains a valuable member of the
 This is the most critical and undeniable value of BM25.
 
 * **The Problem:** SPLADE's "vocabulary" is ultimately limited to the ~30,000 WordPiece tokens that its underlying Transformer model (like BERT) was trained on. While this covers a vast portion of the English language, it is not infinite. It can struggle with highly specific, "long-tail" entities that were not present in its pre-training data, such as:
-    * **Novel Product IDs or Form Numbers:** Form XYZ-2025-W-Rev2
-    * **Complex Chemical or Medical Terms:** 2, 3, 7, 8 — Tetrachlorodibenzodioxin
-    * **Obscure Proper Nouns or Misspellings.**
+  * **Novel Product IDs or Form Numbers:** Form XYZ-2025-W-Rev2
+  * **Complex Chemical or Medical Terms:** 2, 3, 7, 8 — Tetrachlorodibenzodioxin
+  * **Obscure Proper Nouns or Misspellings.**
 
     SPLADE might be forced to break these unknown strings into meaningless sub-words (`X`, `Y`, `Z`, `-`, `2025`), losing the original, precise meaning.
 

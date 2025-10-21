@@ -53,11 +53,11 @@ flowchart TD
 ```
 
 * **Key Characteristics:**
-    * **Architecture:** Two separate "towers" for query and document encoding.
-    * **Interaction:** **None** during encoding. Interaction happens only at the very end via a single vector comparison.
-    * **Representation:** A **single** embedding vector for each item (query or document).
-    * **Key Trade-off:** Prioritizes **Speed and Scalability** over fine-grained precision.
-    * **Primary Role:** High-recall, first-stage retrieval.
+  * **Architecture:** Two separate "towers" for query and document encoding.
+  * **Interaction:** **None** during encoding. Interaction happens only at the very end via a single vector comparison.
+  * **Representation:** A **single** embedding vector for each item (query or document).
+  * **Key Trade-off:** Prioritizes **Speed and Scalability** over fine-grained precision.
+  * **Primary Role:** High-recall, first-stage retrieval.
 
 ## **2. The Cross-Encoder: The Precision Specialist**
 
@@ -96,11 +96,11 @@ flowchart TD
 ```
 
 * **Key Characteristics:**
-    * **Architecture:** A **single** encoder tower that processes a combined input.
-    * **Interaction:** **Full and immediate.** Every query token interacts with every document token through all layers of the Transformer.
-    * **Representation:** N/A. It directly outputs a relevance score, not an independent vector representation.
-    * **Key Trade-off:** Prioritizes **Maximum Precision** at the cost of massive computational overhead and speed.
-    * **Primary Role:** High-precision, second-stage reranking.
+  * **Architecture:** A **single** encoder tower that processes a combined input.
+  * **Interaction:** **Full and immediate.** Every query token interacts with every document token through all layers of the Transformer.
+  * **Representation:** N/A. It directly outputs a relevance score, not an independent vector representation.
+  * **Key Trade-off:** Prioritizes **Maximum Precision** at the cost of massive computational overhead and speed.
+  * **Primary Role:** High-precision, second-stage reranking.
 
 ## **3. ColBERT: The Fine-Grained Compromise**
 
@@ -188,11 +188,11 @@ flowchart LR
 ```
 
 * **Key Characteristics:**
-    * **Architecture:** Functionally a "two-tower" model.
-    * **Interaction:** **Late.** Interaction happens *after* independent encoding, via token-level MaxSim operations.
-    * **Representation:** A **bag of vectors** for each item (one vector per token).
-    * **Key Trade-off:** A balanced compromise, offering **High Precision at a Manageable Speed**, but with a large storage footprint.
-    * **Primary Role:** High-precision, first-stage retrieval.
+  * **Architecture:** Functionally a "two-tower" model.
+  * **Interaction:** **Late.** Interaction happens *after* independent encoding, via token-level MaxSim operations.
+  * **Representation:** A **bag of vectors** for each item (one vector per token).
+  * **Key Trade-off:** A balanced compromise, offering **High Precision at a Manageable Speed**, but with a large storage footprint.
+  * **Primary Role:** High-precision, first-stage retrieval.
 
 ### **Summary: A Side-by-Side Comparison**
 

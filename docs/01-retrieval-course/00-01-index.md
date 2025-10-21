@@ -12,17 +12,17 @@
 
 ## **Part 2: The Architectural Spectrum of Modern Retrieval**
 
-4. **[Bi-Encoders: The Foundation of Scalable Semantic Search](02-01-bi-encoders.md)**
-5. **[Cross-Encoders: The Gold Standard for Precision Reranking](02-02-cross-encoders.md)**
-6. **[A Deep Dive into BM25: The Science of Statistical Relevance](02-03-deep-dive-bm25.md)**
-7. **[SPLADE: Teaching a Lexical Retriever to Think Semantically](02-04-deep-dive-splade.md)**
-8. **[ColBERT: Fine-Grained Interaction for Semantic Precision](02-05-deep-dive-colbert.md)**
+1. **[Bi-Encoders: The Foundation of Scalable Semantic Search](02-01-bi-encoders.md)**
+2. **[Cross-Encoders: The Gold Standard for Precision Reranking](02-02-cross-encoders.md)**
+3. **[A Deep Dive into BM25: The Science of Statistical Relevance](02-03-deep-dive-bm25.md)**
+4. **[SPLADE: Teaching a Lexical Retriever to Think Semantically](02-04-deep-dive-splade.md)**
+5. **[ColBERT: Fine-Grained Interaction for Semantic Precision](02-05-deep-dive-colbert.md)**
 
 ## **Part 3: Assembling the State-of-the-Art Pipeline**
 
-9. **[The Hybrid Retriever: A Spectrum of Understanding](03-01-hybrid-retriever.md)**
-10. **[Reciprocal Rank Fusion (RRF): The Democratic Ensemble](03-02-reciprocal-rank-fusion.md)**
-11. **[The Modern Retriever: A Visual Guide](03-03-visual-guide-architectures.md)**
+1. **[The Hybrid Retriever: A Spectrum of Understanding](03-01-hybrid-retriever.md)**
+2. **[Reciprocal Rank Fusion (RRF): The Democratic Ensemble](03-02-reciprocal-rank-fusion.md)**
+3. **[The Modern Retriever: A Visual Guide](03-03-visual-guide-architectures.md)**
 
 ## **Part 4: The Art and Science of Model Training**
 

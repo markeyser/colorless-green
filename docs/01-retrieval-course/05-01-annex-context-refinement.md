@@ -38,8 +38,8 @@ Context refinement is an active and exciting area of research, but the technique
 * **Context Selection / Filtering:** This is the simplest approach. Instead of blindly taking the `top-k` documents, a filtering step is added. This could involve rules (e.g., "keep adding documents until a total token limit is reached") or, more intelligently, a model that scores individual sentences or passages for their relevance and selects only the most salient ones to pass to the LLM. The goal is to dynamically select the minimal set of passages required to answer the query.
 
 * **Context Compression / Summarization:** These are more advanced techniques that actively rewrite the retrieved information. This might involve:
-    * **Extraction:** A model that pulls out only the most relevant sentences from the top documents and concatenates them.
-    * **Abstraction:** A separate, smaller LLM that is tasked with reading all the retrieved documents and generating a concise, query-focused summary of all the key facts. This summary, not the original documents, is then passed to the final, high-power generator LLM.
+  * **Extraction:** A model that pulls out only the most relevant sentences from the top documents and concatenates them.
+  * **Abstraction:** A separate, smaller LLM that is tasked with reading all the retrieved documents and generating a concise, query-focused summary of all the key facts. This summary, not the original documents, is then passed to the final, high-power generator LLM.
 
 ## **4. Why This Matters for the Future**
 

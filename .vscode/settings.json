@@ -1,23 +1,28 @@
 {
-  "editor.formatOnSave": false,
+  // --- General Editor Settings ---
+  "editor.formatOnSave": true,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.eol": "\n",
+  // --- Prettier Configuration (for YAML) ---
+  // Use Prettier as the default formatter for YAML files.
   "[yaml]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[markdown]": {
-    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
-    "editor.codeActionsOnSave": {
-      "source.fixAll.markdownlint": "explicit"
-    }
-  },
-  "markdownlint.run": "onSave",
-  "markdownlint.configFile": ".markdownlint.json",
-  "prettier.requireConfig": false,
-  "prettier.useEditorConfig": true,
-  "prettier.ignorePath": ".gitignore",
-  "prettier.disableLanguages": [
-    "markdown"
+  "prettier.documentSelectors": [
+    "**/*.yml",
+    "**/*.yaml"
   ],
-  "files.trimTrailingWhitespace": false,
-  "files.insertFinalNewline": false
+  // --- Markdownlint Configuration ---
+  // Use markdownlint as the default formatter for Markdown files.
+  "[markdown]": {
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+  },
+  // Tells the markdownlint extension to use our shared config file.
+  "markdownlint.config": {
+    "extends": ".markdownlint.yaml"
+  },
+  // --- Python-specific settings (for the virtual environment) ---
+  // Helps VS Code find your Poetry virtual environment.
+  "python.defaultInterpreterPath": ".venv/bin/python"
 }

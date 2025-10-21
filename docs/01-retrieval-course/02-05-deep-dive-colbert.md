@@ -49,9 +49,9 @@ Let's make this concrete with a simple example to see why this is so powerful.
 
 * **Query:** "liability insurance cost" (This becomes 3 query token embeddings: $v(liability)$, $v(insurance)$, $v(cost)$)
 * **Document:** A long, comprehensive document that contains the following sentences scattered far apart:
-    * "...the policyholder is covered for personal **liability** up to the agreed limit..."
-    * "...this auto **policy** is renewed on an annual basis..."
-    * "...the yearly **premium** is calculated based on driving history..."
+  * "...the policyholder is covered for personal **liability** up to the agreed limit..."
+  * "...this auto **policy** is renewed on an annual basis..."
+  * "...the yearly **premium** is calculated based on driving history..."
 
 A standard bi-encoder might struggle here. The document's overall "gist" is very broad, and the query concepts are not located together.
 
@@ -164,8 +164,8 @@ The most active research in this area is focused on mitigating these challenges 
 This is the most mature area of ColBERT research, focused on making the massive index more manageable.
 
 * **The Concept (Vector Quantization & Pruning):** The core ideas are to (1) make each stored vector smaller, and (2) store fewer vectors overall.
-    * **Quantization:** Instead of storing each vector's dimensions as a full-precision 32-bit float, we can represent them with much less information (e.g., 2-bit or even 1-bit values). This is a "lossy" compression that dramatically reduces the index size with a minimal drop in performance.
-    * **Pruning:** Do we really need to store a vector for stop words like "the," "a," "is"? Pruning strategies involve intelligently filtering the document's tokens and only storing embeddings for the most salient or important terms, further reducing index size and speeding up the MaxSim search.
+  * **Quantization:** Instead of storing each vector's dimensions as a full-precision 32-bit float, we can represent them with much less information (e.g., 2-bit or even 1-bit values). This is a "lossy" compression that dramatically reduces the index size with a minimal drop in performance.
+  * **Pruning:** Do we really need to store a vector for stop words like "the," "a," "is"? Pruning strategies involve intelligently filtering the document's tokens and only storing embeddings for the most salient or important terms, further reducing index size and speeding up the MaxSim search.
 
 * **State of the Art:** The ColBERTv2 model, which your project is based on, already incorporates highly advanced quantization and pre-processing steps to manage its footprint, but this remains a very active area of research.
 

@@ -1,25 +1,33 @@
+# pyproject.toml
+
 [project]
 name = "the-reasoning-codex"
 version = "0.1.0"
-description = ""
-authors = [
-    {name = "markeyser",email = "marcosak@gmail.com"}
-]
+description = "A collection of expert playbooks on building reliable, specialized, and grounded AI systems."
+authors = [{ name = "Marcos Keyser", email = "marcosak@gmail.com" }]
 readme = "README.md"
-requires-python = ">=3.10"
-dependencies = [
-    "mkdocs-git-revision-date-localized-plugin (>=1.4.7,<2.0.0)"
-]
+requires-python = ">=3.11"
+
+# Core dependencies are empty as this is a documentation project
+dependencies = []
 
 [tool.poetry]
-packages = [{include = "the_reasoning_codex", from = "src"}]
+name = "the-reasoning-codex"
+version = "0.1.0"
+description = "A collection of expert playbooks on building reliable, specialized, and grounded AI systems."
+authors = ["Marcos Keyser <marcosak@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "the_reasoning_codex", from = "src" }]
+
+[tool.poetry.dependencies]
+python = ">=3.11"
+
+[tool.poetry.group.dev.dependencies]
+mkdocs-material = { extras = ["imaging", "text"], version = ">=9.5.0" }
+pre-commit = ">=3.5.0"
+# mkdocs-git-revision-date-localized-plugin is a dependency of the blog plugin,
+# so it is installed automatically with mkdocs-material[text]. No need to list it separately.
 
 [build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
+requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
-
-[dependency-groups]
-dev = [
-    "mkdocs-material[imaging,text] (>=9.6.22,<10.0.0)",
-    "pre-commit (>=4.3.0,<5.0.0)"
-]
