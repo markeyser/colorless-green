@@ -46,6 +46,14 @@ lint-update: # Update all pre-commit hooks to their latest versions
 	@poetry run pre-commit autoupdate
 
 # ==============================================================================
+# ENVIRONMENT
+# ==============================================================================
+
+env-use: # Recreate Poetry virtualenv using the current pyenv interpreter
+	@echo "Pointing Poetry at $(shell pyenv which python)"
+	@poetry env use "$(shell pyenv which python)"
+
+# ==============================================================================
 # HELP
 # ==============================================================================
 
