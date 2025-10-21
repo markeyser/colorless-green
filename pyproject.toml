@@ -25,8 +25,7 @@ python = ">=3.11"
 [tool.poetry.group.dev.dependencies]
 mkdocs-material = { extras = ["imaging", "text"], version = ">=9.5.0" }
 pre-commit = ">=3.5.0"
-# mkdocs-git-revision-date-localized-plugin is a dependency of the blog plugin,
-# so it is installed automatically with mkdocs-material[text]. No need to list it separately.
+mkdocs-git-revision-date-localized-plugin = ">=1.4.7,<2.0.0"
 
 [build-system]
 requires = ["poetry-core"]
