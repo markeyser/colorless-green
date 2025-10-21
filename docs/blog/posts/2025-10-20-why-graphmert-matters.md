@@ -91,14 +91,3 @@ This is the lane where I operate: **designing and shipping domain-specific syste
 
 - Predict top-k tail tokens per ⟨head, relation⟩; **LLM combines** under **strict token whitelist**; similarity > β (~0.67).
 - Deduplicate; store **provenance** (doc_id, sentence).
-
-### 4.6 Use it
-
-- Swap vector-RAG for **GraphRAG** (or graph-aware retriever).
-- Evaluate with **FActScore (context-only)** + **ValidityScore**, plus your **task metrics** (Exact Match, nDCG, human red-team).
-
-## Where GraphMERT sits in the 2025 stack
-
-- **It’s not anti-LLM.** It **re-positions** LLMs: helper steps, surface generation, and tool orchestration—**not** facts warehouse.
-- **It’s small-model friendly.** Aligns with the industry trend toward **SLMs you can fine-tune** + **structured memory** you can govern.
-- **It’s neurosymbolic in the right way.** Less philosophy, more *“here’s the encoder, here’s the graph, here are the*
