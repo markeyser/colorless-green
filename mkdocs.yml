@@ -122,6 +122,9 @@ plugins:
 nav:
   - "The Reasoning Codex": index.md
   - "Blog": blog/index.md
+  - "Glossary":
+      - "Modern AI Evaluation": glossary/modern-ai-evaluation.md
+      - "Benchmarking Philosophies": glossary/benchmarking-philosophies.md
   - "From Zero-Shot to Expert":
       - "Overview": 01-retrieval-course/00-01-index.md
       - "Introduction": 01-retrieval-course/00-02-intro.md

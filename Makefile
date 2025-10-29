@@ -53,6 +53,23 @@ env-use: # Recreate Poetry virtualenv using the current pyenv interpreter
 	@echo "Pointing Poetry at $(shell pyenv which python)"
 	@poetry env use "$(shell pyenv which python)"
 
+env-activate: # Activate Poetry virtualenv in a new subshell
+	@env_path="$(shell poetry env info --path)"; \
+	echo "Activating Poetry environment at $$env_path"; \
+	source "$$env_path/bin/activate"; \
+	exec $$SHELL
+
+env-status: # Show the currently active Poetry virtualenv (if any)
+	@poetry env list
+
+env-deactivate: # Deactivate the current virtualenv (if any)
+	@if [ -n "$$VIRTUAL_ENV" ]; then \
+		echo "Deactivating virtualenv at $$VIRTUAL_ENV"; \
+		deactivate; \
+	else \
+		echo "No virtualenv is currently active."; \
+	fi
+
 # ==============================================================================
 # HELP
 # ==============================================================================
