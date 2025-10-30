@@ -1,4 +1,5 @@
 ---
+title: "Embeddings: The Language of Meaning"
 tags:
   - embeddings
   - distributionalHypothesis

@@ -1,3 +1,11 @@
+---
+title: "The Modern Retriever: A Visual Guide"
+tags:
+  - visualGuide
+  - architecture
+  - retrieval
+---
+
 # The Modern Retriever: A Visual Guide
 
 Having explored the individual components of our hybrid retrieval system—from the foundational bi-encoder to the powerful cross-encoder and the innovative ColBERT—it is now time to consolidate our understanding. The best way to grasp the fundamental trade-offs between these architectures is to see them side-by-side.

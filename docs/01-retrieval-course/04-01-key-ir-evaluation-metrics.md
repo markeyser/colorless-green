@@ -1,4 +1,5 @@
 ---
+title: "Key IR Evaluation Metrics"
 tags:
   - recallAtK
   - nDCG

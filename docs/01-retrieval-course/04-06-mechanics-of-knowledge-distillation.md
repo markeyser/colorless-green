@@ -1,4 +1,5 @@
 ---
+title: "The Art of Mimicry: The Mechanics of Knowledge Distillation for Retrieval"
 tags:
   - knowledgeDistillation
   - teacherStudent

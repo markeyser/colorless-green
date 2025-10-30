@@ -1,3 +1,11 @@
+---
+title: "The BEIR Framework for Reproducibility Research"
+tags:
+  - beir
+  - benchmarking
+  - zeroShot
+---
+
 # The BEIR Framework for Reproducibility Research
 
 Now that you understand the core metrics used to measure retrieval performance, it is crucial to discuss the scientific infrastructure that makes those measurements meaningful. For many years, the field of Information Retrieval research resembled a "Wild West." Progress was rapid, but it was also chaotic.

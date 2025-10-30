@@ -1,4 +1,5 @@
 ---
+title: "The Hybrid Retriever: A Spectrum of Understanding"
 tags:
   - hybridRetrieval
   - modelEnsemble

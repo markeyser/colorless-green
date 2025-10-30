@@ -1,3 +1,11 @@
+---
+title: "Benchmarking Philosophies: The Researcher vs. The Practitioner"
+tags:
+  - benchmarking
+  - zeroShot
+  - inDomain
+---
+
 # Benchmarking Philosophies: The Researcher vs. The Practitioner
 
 The way we design and use benchmarks in artificial intelligence depends heavily on our fundamental goal. Are we trying to **prove a general advance** in AI capabilities for the scientific community, or are we trying to **find the optimal solution** for a specific, high-stakes business problem?

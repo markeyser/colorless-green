@@ -122,6 +122,7 @@ plugins:
 nav:
   - "The Reasoning Codex": index.md
   - "Blog": blog/index.md
+  - "Tags": tags.md
   - "Glossary":
       - "Modern AI Evaluation": glossary/modern-ai-evaluation.md
       - "Benchmarking Philosophies": glossary/benchmarking-philosophies.md

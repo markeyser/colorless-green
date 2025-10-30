@@ -1,3 +1,11 @@
+---
+title: "Modern AI Evaluation: A Multi-Axis Framework"
+tags:
+  - evaluationFramework
+  - multiObjective
+  - zeroShot
+---
+
 # Modern AI Evaluation: A Multi-Axis Framework
 
 In the rapidly evolving landscape of artificial intelligence, the methods we use to measure performance are as critical as the models themselves. A single accuracy score on a generic benchmark is no longer sufficient. Modern AI evaluation is a sophisticated, multi-objective process that assesses a system's true fitness for a specific purpose, whether that's advancing foundational research or solving a high-stakes business problem.

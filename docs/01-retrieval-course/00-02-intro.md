@@ -1,3 +1,12 @@
+---
+title: "Introduction"
+tags:
+  - introduction
+  - retrieval
+  - domainAdaptation
+  - zeroShot
+---
+
 # Introduction
 
 ## **1. The Generalist's Dilemma: When State-of-the-Art Fails**

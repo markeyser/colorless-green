@@ -1,6 +1,7 @@
 ---
+title: "A Deep Dive into BM25: The Science of Statistical Relevance"
 tags:
-  - BM25
+  - bm25
   - inverseDocumentFrequency
   - termFrequencySaturation
   - documentLengthNormalization

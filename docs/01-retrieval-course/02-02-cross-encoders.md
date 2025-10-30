@@ -1,4 +1,5 @@
 ---
+title: "Cross-Encoders: The Gold Standard for Precision Reranking"
 tags:
   - crossEncoder
   - crossAttention

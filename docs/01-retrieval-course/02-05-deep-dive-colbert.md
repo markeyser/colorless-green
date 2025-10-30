@@ -1,9 +1,10 @@
 ---
+title: "ColBERT: Fine-Grained Interaction for Semantic Precision"
 tags:
-  - ColBERT
+  - colbert
   - lateInteraction
   - tokenLevelEmbeddings
-  - MaxSim
+  - maxSim
   - indexQuantization
   - hybridFusion
   - storageFootprint

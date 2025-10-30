@@ -1,4 +1,5 @@
 ---
+title: "Reciprocal Rank Fusion (RRF): The Democratic Ensemble"
 tags:
   - reciprocalRankFusion
   - rankFusion

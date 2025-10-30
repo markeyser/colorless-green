@@ -1,4 +1,5 @@
 ---
+title: "Bi-Encoders: The Foundation of Scalable Semantic Search"
 tags:
   - biEncoder
   - twoTowerArchitecture

@@ -1,4 +1,5 @@
 ---
+title: "SPLADE: Teaching a Lexical Retriever to Think Semantically"
 tags:
   - learnedSparseRetrieval
   - semanticExpansion

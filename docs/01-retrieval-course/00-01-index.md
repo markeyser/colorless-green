@@ -1,3 +1,12 @@
+---
+title: "From Zero-Shot to Expert: A Deep Dive into Retrieval Domain Adaptation"
+tags:
+  - courseOverview
+  - retrieval
+  - domainAdaptation
+  - zeroShot
+---
+
 # From Zero-Shot to Expert: A Deep Dive into Retrieval Domain Adaptation
 
 ## **Overview**

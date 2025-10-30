@@ -1,13 +1,12 @@
 ---
+title: "Lexical vs. Semantic Search"
 tags:
-
-- lexicalSearch
-- BM25
-- semanticSearch
-- denseEmbeddings
-- transformerModels
-- vocabularyMismatch
-- biEncoderRetrieval
+  - lexicalSearch
+  - semanticSearch
+  - vocabularyMismatch
+  - bm25
+  - denseEmbeddings
+  - biEncoderRetrieval
 ---
 
 # Lexical vs. Semantic Search
