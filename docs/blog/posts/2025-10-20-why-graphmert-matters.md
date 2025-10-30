@@ -74,11 +74,9 @@ It suggests a future where:
 * **LLMs** are used for what they do best: creative tasks, summarization, and providing a natural language interface.
 * **Neurosymbolic models** like GraphMERT are used for what *they* do best: building and reasoning over structured, factual knowledge bases.
 
-> [!NOTE]
-> **Caveats and Nuances**
->
-> 1. **Not LLM-Free:** The GraphMERT pipeline *does* use a helper LLM for auxiliary tasks like initial entity discovery and combining predicted tokens into phrases. The core innovation is in the KG distillation and reasoning, not in being entirely LLM-free.
-> 2. **Seed Ontology:** The approach benefits from a pre-existing seed KG (like UMLS in the paper's demo). Its portability to domains without mature schemas is an open question.
-> 3. **Single Domain:** The impressive results are so far demonstrated on a single, albeit complex, domain corpus.
+!!! note "Caveats and Nuances"
+    1. **Not LLM-Free:** The GraphMERT pipeline *does* use a helper LLM for auxiliary tasks like initial entity discovery and combining predicted tokens into phrases. The core innovation is in the KG distillation and reasoning, not in being entirely LLM-free.
+    2. **Seed Ontology:** The approach benefits from a pre-existing seed KG (like UMLS in the paper's demo). Its portability to domains without mature schemas is an open question.
+    3. **Single Domain:** The impressive results are so far demonstrated on a single, albeit complex, domain corpus.
 
 This isn't the end of LLMs. But it is a powerful reminder that the future of AI is not a monolith. It's a diverse ecosystem of specialized tools, and the "forgotten" encoder, fused with the power of symbolic reasoning, is poised to make a dramatic and impactful comeback.
