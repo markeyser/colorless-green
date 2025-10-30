@@ -52,8 +52,9 @@ This approach is aligned with **in-domain, multi-objective evaluation**. Its pur
 !!! tip "Critical Consideration: The Multi-Objective Scorecard"
     A practitioner cannot afford to rely on a single accuracy metric. The "champion" model must be the one that performs best across a **holistic scorecard** (inspired by frameworks like HELM):
     ***Effectiveness:** How accurate is it on our golden dataset? (e.g., `nDCG@10`, `Faithfulness`).
-    *   **Efficiency:** What is the cost per 1,000 requests and the p95 latency?
-    *   **Safety & Robustness:** Does it pass our internal prompt injection and toxicity tests?
+
+    - **Efficiency:** What is the cost per 1,000 requests and the p95 latency?
+    - **Safety & Robustness:** Does it pass our internal prompt injection and toxicity tests?
 
     The best model for deployment is the one that provides the optimal balance of these factors according to the business's specific needs and risk tolerance.
 
@@ -68,8 +69,9 @@ For the practitioner, however, offline evaluation on a static "golden dataset" i
 !!! success "The Ship-Readiness Loop: Combining Offline and Online Evaluation"
     1.  **Offline Evaluation (The Lab):** Use your in-domain golden dataset and holistic scorecard to benchmark multiple candidate models. This allows you to identify one or two top contenders in a controlled, reproducible environment.
     2.  **Online Evaluation (The Real World):** Deploy these top contenders in a controlled manner to test them on real user traffic and measure their direct impact on business-critical metrics.
-        ***A/B Testing:** Serve different models to different user segments and measure their effect on user satisfaction, task completion rates, or revenue.
-        *   **Replay Tests:** Replay historical production traffic against a new model candidate to see how it would have performed, providing a safe, offline preview of its real-world behavior.
+
+        - **A/B Testing:** Serve different models to different user segments and measure their effect on user satisfaction, task completion rates, or revenue.
+        - **Replay Tests:** Replay historical production traffic against a new model candidate to see how it would have performed, providing a safe, offline preview of its real-world behavior.
 
     This full-stack, offline-to-online workflow, supported by platforms like **Google's Vertex AI Evaluation Service**, is the gold standard for shipping reliable, effective, and safe AI systems.
 

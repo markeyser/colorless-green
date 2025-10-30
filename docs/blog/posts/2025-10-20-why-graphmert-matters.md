@@ -1,6 +1,5 @@
 ---
-title: "Paper Review: Why GraphMERT is a Glimpse into the Future of Enterprise AI"
-subtitle: "Why smaller neurosymbolic stacks beat brute-force LLMs for factual KGs"
+title: "Reviewing GraphMERT"
 date: 2025-10-20
 authors:
   - markeyser
@@ -11,22 +10,6 @@ tags:
   - LLM
   - BERT
 draft: false
----
-
-You've provided some absolutely fantastic, sharp, and constructive feedback. This is exactly what's needed to transform an enthusiastic first draft into a rigorous, credible, and much more impactful blog post.
-
-I will now rewrite the blog post from scratch, incorporating every single one of your corrections and suggestions. The goal is to preserve the original's engaging voice while anchoring it firmly in the facts presented in the paper.
-
----
-
-### **Rewritten Blog Post for "The Reasoning Codex"**
-
-**Title:** Paper Review: Why GraphMERT is a Glimpse into the Future of Enterprise AI
-
-**(Reviewing "[GraphMERT: Efficient and Scalable Distillation of Reliable Knowledge Graphs from Unstructured Data](https://arxiv.org/abs/2510.09580)", arXiv:2510.09580, Oct 10, 2025)**
-
-**Tags:** `Neurosymbolic`, `Knowledge Graph`, `RAG`, `LLM`, `BERT`
-
 ---
 
 In the relentless race for bigger Large Language Models, we've come to equate scale with capability. But what if, for a critical class of enterprise problems, a smaller, more specialized tool isn't just better—it's in a different league entirely?
@@ -45,7 +28,8 @@ The researchers found that off-the-shelf Large Language Models, when tasked with
 
 The story was the same for ontological validity. GraphMERT's KG achieved a **ValidityScore of 68.8%**, while the LLM-generated baseline lagged at **43.0%**.
 
-> *Anecdote:* The difficulty LLMs face with this task was vividly illustrated in a YouTube demo where several frontier models were prompted to complete a medical triplet from a text snippet about Chronic Kidney Disease (CKD). Most models incorrectly chose a weak association ("cerebellar gray matter") over the primary fact, and one even hallucinated the word "pediatric." While illustrative, this demo was not part of the paper's formal evaluation, but it highlights the very problem GraphMERT was designed to solve.
+!!! note "*Anecdote*"
+    The difficulty LLMs face with this task was vividly illustrated in a YouTube demo where several frontier models were prompted to complete a medical triplet from a text snippet about Chronic Kidney Disease (CKD). Most models incorrectly chose a weak association ("cerebellar gray matter") over the primary fact, and one even hallucinated the word "pediatric." While illustrative, this demo was not part of the paper's formal evaluation, but it highlights the very problem GraphMERT was designed to solve.
 
 ### The Solution: A Return to the "Forgotten" Architecture
 

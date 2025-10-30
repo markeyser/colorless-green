@@ -69,18 +69,22 @@ Evaluation moves beyond a single input-output pair to assessing the quality of t
 
     **1. Benchmark Contamination and Saturation**
     Many famous public benchmarks (like the original MMLU) are now so common that they are effectively "saturated"—their content is widely present in the pre-training data of modern LLMs. High scores on these benchmarks can be a result of memorization, not true reasoning ability.
-    *   **Best Practice:** For assessing true zero-shot capabilities, prioritize newer, "decontaminated" benchmarks like **MMLU-Pro** or **GPQA**. Always be skeptical of leaderboard scores on older, saturated benchmarks.
+
+    - **Best Practice:** For assessing true zero-shot capabilities, prioritize newer, "decontaminated" benchmarks like **MMLU-Pro** or **GPQA**. Always be skeptical of leaderboard scores on older, saturated benchmarks.
 
     **2. The LLM-as-Judge: A Scalable but Imperfect Tool**
     Using a powerful LLM (like GPT-4o or Gemini 1.5 Pro) to judge the output of another AI system is a scalable and powerful technique. However, these judges are not infallible.
-    *   **Risks:** They exhibit known biases (e.g., preferring longer answers, being influenced by the order of comparison) and can have reproducibility issues.
-    *   **Best Practice:** Treat LLM-as-judge scores as a strong signal, not as absolute ground truth. It is non-negotiable to perform a **human audit and calibration** on a small sample of the judge's evaluations to ensure its reasoning aligns with your quality standards before deploying it at scale.
+
+    - **Risks:** They exhibit known biases (e.g., preferring longer answers, being influenced by the order of comparison) and can have reproducibility issues.
+
+    - **Best Practice:** Treat LLM-as-judge scores as a strong signal, not as absolute ground truth. It is non-negotiable to perform a **human audit and calibration** on a small sample of the judge's evaluations to ensure its reasoning aligns with your quality standards before deploying it at scale.
 
     **3. The Safety & Security Imperative**
     A production AI system is an adversarial target. Evaluation must include a dedicated security track.
-    *   **Prompt Injection:** Can a user trick the system into ignoring its original instructions?
-    *   **Jailbreaking:** Can a user bypass the system's safety filters to generate harmful or forbidden content?
-    *   **Best Practice:** Rigorously test your system against known attack vectors using benchmarks like **JailbreakBench** and follow the security guidance from industry standards like the **OWASP Top 10 for LLMs**.
+
+    -   **Prompt Injection:** Can a user trick the system into ignoring its original instructions?
+    -   **Jailbreaking:** Can a user bypass the system's safety filters to generate harmful or forbidden content?
+    -    **Best Practice:** Rigorously test your system against known attack vectors using benchmarks like **JailbreakBench** and follow the security guidance from industry standards like the **OWASP Top 10 for LLMs**.
 
 ---
 
@@ -91,8 +95,10 @@ A mature evaluation strategy is not a one-time event but a continuous loop that 
 !!! success "The Ship-Readiness Loop: From Lab to Production"
     1.  **Offline Evaluation (The Lab):** Use a high-quality, in-domain "golden dataset" to benchmark multiple candidate models and architectures on your holistic scorecard. This allows you to identify one or two top contenders in a controlled environment.
     2.  **Online Evaluation (The Real World):** Deploy the top contenders in a controlled manner to test them on real user traffic and measure their impact on business-critical metrics.
-        ***A/B Testing:** Serve different models to different user segments and measure their effect on user satisfaction, task completion rates, or revenue.
-        *   **Replay Tests:** Replay historical production traffic against a new model candidate to see how it would have performed, providing a safe, offline preview of its real-world behavior.
+
+        - **A/B Testing:** Serve different models to different user segments and measure their  effect on user satisfaction, task completion rates, or revenue.
+
+        - **Replay Tests:** Replay historical production traffic against a new model candidate to see how it would have performed, providing a safe, offline preview of its real-world behavior.
 
     This full-stack, offline-to-online workflow, supported by platforms like **Google's Vertex AI Evaluation Service**, is the gold standard for shipping reliable and effective AI systems.
 
