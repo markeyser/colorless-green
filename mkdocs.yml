@@ -29,6 +29,7 @@ theme:
     - content.code.annotate
     - content.code.copy
     - content.tooltips
+    - content.tags
 
   palette:
     # Palette toggle for light vs dark mode

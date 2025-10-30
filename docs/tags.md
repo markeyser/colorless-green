@@ -1,7 +1,7 @@
----
 title: "Tags"
 ---
 
-# Tags
+Tags
+====
 
-{{ tags }}
+<!-- material/tags -->
