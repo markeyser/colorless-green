@@ -12,11 +12,7 @@ tags:
 draft: false
 ---
 
-
-<a href="https://arxiv.org/abs/2510.09580" target="_blank" rel="noopener">
-  <img src="Screenshot.png" alt="Screenshot"
-       style="box-shadow:0 6px 18px rgba(0,0,0,.15); border-radius:12px;">
-</a>
+[![GraphMERT arXiv teaser](../../assets/images/graphmert-screenshot.png){style="box-shadow:0 6px 18px rgba(0,0,0,.15); border-radius:12px;"}](https://arxiv.org/abs/2510.09580){target=_blank rel="noopener"}
 
 In the relentless race for bigger Large Language Models, we've come to equate scale with capability. But what if, for a critical class of enterprise problems, a smaller, more specialized tool isn't just better—it's in a different league entirely?
 
