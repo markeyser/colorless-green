@@ -20,8 +20,8 @@
             "command": "/opt/homebrew/bin/npx",
             "args": [
                 "-y",
-                "@modelcontextprotocol/server-filesystem",
                 "--mount",
+                "@modelcontextprotocol/server-filesystem",
                 "${workspaceFolder}"
             ]
         },
