@@ -1,0 +1,39 @@
+{
+    "servers": {
+        "mermaid-validator": {
+            "type": "stdio",
+            "command": "/opt/homebrew/bin/npx",
+            "args": [
+                "-y",
+                "@rtuin/mcp-mermaid-validator@latest"
+            ]
+        },
+        "mermaid-doc-mcp-server": {
+            "type": "stdio",
+            "command": "/opt/homebrew/bin/uvx",
+            "args": [
+                "mermaid-doc-mcp-server@latest"
+            ]
+        },
+        "filesystem": {
+            "type": "stdio",
+            "command": "/opt/homebrew/bin/npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-filesystem",
+                "--mount",
+                "${workspaceFolder}"
+            ]
+        },
+        "git": {
+            "type": "stdio",
+            "command": "/opt/homebrew/bin/uvx",
+            "args": [
+                "mcp-server-git",
+                "--repository",
+                "${workspaceFolder}"
+            ]
+        }
+    },
+    "inputs": []
+}
