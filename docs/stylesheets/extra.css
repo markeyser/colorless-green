@@ -3,6 +3,18 @@
 /* Define a new 'arxiv' admonition type */
 :root {
     --md-admonition-icon--arxiv: url("https://info.arxiv.org/brand/images/brand-logo-primary.svg");
+    /* Primary brand color */
+    --md-primary-fg-color: #59945f !important;
+    --md-primary-fg-color--light: #71aa77 !important;
+    --md-primary-fg-color--dark: #437248 !important;
+    --md-accent-fg-color: #71aa77 !important;
+}
+
+:root[data-md-color-scheme="slate"] {
+    --md-primary-fg-color: #59945f !important;
+    --md-primary-fg-color--light: #71aa77 !important;
+    --md-primary-fg-color--dark: #437248 !important;
+    --md-accent-fg-color: #71aa77 !important;
 }
 
 .md-typeset .admonition.arxiv,
