@@ -6,10 +6,10 @@ This video outlines a holistic approach to reliability by evolving from purely n
 
 <div style="position: relative; padding-top: 56.25%; margin: 1rem 0;">
   <iframe
-    src="https://drive.google.com/file/d/17NWdNH7Vud37qgH6LITkSC1gyb936V7_/preview"
-    allow="autoplay"
-    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
-    allowfullscreen
+    src="https://www.youtube.com/embed/J1ctUJUFxRs"
     title="Beyond the Black Box: A Roadmap to Reliable Agentic Systems"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
   ></iframe>
 </div>
