@@ -1,8 +1,12 @@
-# Welcome to The Reasoning Codex
+<div style="text-align:center;">
+  <img src="assets/images/source-512.png" alt="Colorless Green logo" style="width:100%;height:auto;display:block;margin:0 auto;" />
+</div>
+
+# Welcome to Colorless Green
 
 **A collection of expert playbooks on building reliable, specialized, and grounded AI systems.**
 
-This portfolio is dedicated to the science and engineering of applied AI. The playbooks and articles here explore a central thesis: that the path to robust, high-performance AI lies not in the brute force of massive, generalist models, but in the precision and efficiency of smaller, open-source models that are expertly fine-tuned to the data and the task at hand.
+Colorless Green is dedicated to the science and engineering of applied AI. The playbooks and articles here explore a central thesis: that the path to robust, high-performance AI lies not in the brute force of massive, generalist models, but in the precision and efficiency of smaller, open-source models that are expertly fine-tuned to the data and the task at hand.
 
 The content focuses on a rigorous, three-phase methodology for model specialization:
 

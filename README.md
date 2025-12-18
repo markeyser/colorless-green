@@ -1,6 +1,6 @@
-# The Reasoning Codex
+# Colorless Green
 
-[![GitHub Pages Deploy](https://github.com/markeyser/the-reasoning-codex/actions/workflows/ci.yml/badge.svg)](https://github.com/markeyser/the-reasoning-codex/actions/workflows/ci.yml)
+[![GitHub Pages Deploy](https://github.com/markeyser/colorless-green/actions/workflows/ci.yml/badge.svg)](https://github.com/markeyser/colorless-green/actions/workflows/ci.yml)
 [![Content License: CC BY 4.0](https://img.shields.io/badge/Content-CC%20BY%204.0-blue.svg)](http://creativecommons.org/licenses/by/4.0/)
 [![Repo License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
@@ -8,7 +8,7 @@
 
 This repository contains the source for the published content. The code for the projects and experiments discussed here is hosted in separate, dedicated repositories linked within the playbooks.
 
-## **[➡️ Visit the Live Site: The Reasoning Codex](https://markeyser.github.io/the-reasoning-codex/)**
+## **[➡️ Visit the Live Site: Colorless Green](https://colorlessgreen.ai/)**
 
 ## 🏛️ Core Philosophy
 
@@ -22,11 +22,11 @@ The playbooks focus on a rigorous, three-phase methodology for model specializat
 
 ## 📚 Published Playbooks
 
-- **[From Zero-Shot to Expert: A Deep Dive into Retrieval Domain Adaptation](https://markeyser.github.io/the-reasoning-codex/01-retrieval-course/00-01-index.md)**
+- **[From Zero-Shot to Expert: A Deep Dive into Retrieval Domain Adaptation](https://colorlessgreen.ai/01-retrieval-course/00-01-index.md)**
 
   *A graduate-level playbook on building and fine-tuning state-of-the-art retrieval systems, covering modern architectures (BM25, SPLADE, ColBERT) and the advanced DAPT → SFT workflow.*
 
-- **[Training the Agent: A Deep Dive into Policy Optimization with RLFT](https://markeyser.github.io/the-reasoning-codex/02-agentic-reasoning-course/index.md)** - *Coming Soon*
+- **[Training the Agent: A Deep Dive into Policy Optimization with RLFT](https://colorlessgreen.ai/02-agentic-reasoning-course/index.md)** - *Coming Soon*
 
   *An advanced playbook on moving beyond prompt engineering to train autonomous AI agents using the CPT → SFT → RLFT stack and methods like GRPO.*
 
@@ -34,8 +34,8 @@ The playbooks focus on a rigorous, three-phase methodology for model specializat
 
 This site is built with Python, [Poetry](https://python-poetry.org/), and [MkDocs](https://www.mkdocs.org/) with the [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) theme. To run the site locally:
 
-1. `git clone https://github.com/markeyser/the-reasoning-codex.git`
-2. `cd the-reasoning-codex`
+1. `git clone https://github.com/markeyser/colorless-green.git`
+2. `cd colorless-green`
 3. `poetry install`
 4. `poetry shell`
 5. `mkdocs serve`
