@@ -133,6 +133,7 @@ nav:
       - "Modern AI Evaluation": glossary/modern-ai-evaluation.md
       - "Benchmarking Philosophies": glossary/benchmarking-philosophies.md
       - "The Three Pillars of Domain AI": glossary/three-pillars-of-domain-ai.md
+      - "Beyond the Black Box": glossary/neuro-symbolic-roadmap.md
   - "From Zero-Shot to Expert":
       - "Overview": 01-retrieval-course/00-01-index.md
       - "Introduction": 01-retrieval-course/00-02-intro.md
